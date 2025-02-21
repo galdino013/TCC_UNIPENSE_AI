@@ -1,0 +1,151 @@
+/* Estilos gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+/* Header */
+.app-header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.app-title {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.app-subtitle {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Main content */
+.app-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex: 1;
+}
+
+/* Search input */
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 1rem;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #45a049;
+}
+
+/* Botões de Teste */
+.test-buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.test-button {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 80%; /* Para que o botão fique responsivo */
+  max-width: 500px;
+  text-align: center;
+}
+
+.test-button:hover {
+  background-color: #45a049;
+}
+
+.test-button:focus {
+  outline: none;
+  background-color: #3e8e41;
+}
+
+.test-button:active {
+  background-color: #357a38;
+}
+
+/* Footer */
+.app-footer {
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .search-input {
+    width: 70%;
+  }
+
+  .test-button {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-input {
+    width: 60%;
+  }
+
+  .test-button {
+    width: 90%;
+  }
+}
